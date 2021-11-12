@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids</title>
+
+    <style>
+        .wrapper{
+           display: grid; 
+           grid-template-columns: 70% 30%;
+           /*
+           grid-column-gap: 1em;
+           grid-row-gap: 1em;
+           */
+           grid-gap: 1em;
+
+        }
+        .wrapper > div{
+            background: #eee;
+            padding:1em;
+
+
+        }
+        .wrapper > div:nth-child(odd){
+            background:#ddd ;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At enim sunt quos iste omnis asperiores
+            reprehenderit voluptatum hic modi aliquid delectus quaerat rem, eos itaque velit repellendus voluptas
+            soluta, officia recusandae natus animi. Doloribus, sint officia nam earum reiciendis debitis aspernatur rem
+            illum iste nisi dolorem adipisci aut voluptate soluta quas ipsa consequatur maiores eius consectetur minus
+            incidunt veritatis? Vitae ipsam similique quaerat unde molestiae, voluptas consequuntur quibusdam maiores
+            expedita quis quisquam. Omnis obcaecati fuga aperiam ad magnam nam inventore.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia minima et autem aspernatur. Fuga obcaecati
+            tenetur officiis, beatae nihil exercitationem sequi, expedita quaerat cupiditate inventore quam quia error
+            tempore doloribus!
+        </div>
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At enim sunt quos iste omnis asperiores
+            reprehenderit voluptatum hic modi aliquid delectus quaerat rem, eos itaque velit repellendus voluptas
+            soluta, officia recusandae natus animi. Doloribus, sint officia nam earum reiciendis debitis aspernatur rem
+            illum iste nisi dolorem adipisci aut voluptate soluta quas ipsa consequatur maiores eius consectetur minus
+            incidunt veritatis? Vitae ipsam similique quaerat unde molestiae, voluptas consequuntur quibusdam maiores
+            expedita quis quisquam. Omnis obcaecati fuga aperiam ad magnam nam inventore.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia minima et autem aspernatur. Fuga obcaecati
+            tenetur officiis, beatae nihil exercitationem sequi, expedita quaerat cupiditate inventore quam quia error
+            tempore doloribus!
+        </div>
+    </div>
+</body>
+
+</html>
